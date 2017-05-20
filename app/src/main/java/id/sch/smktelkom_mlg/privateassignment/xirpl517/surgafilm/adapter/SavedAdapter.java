@@ -29,7 +29,7 @@ public class SavedAdapter extends RecyclerView.Adapter<SavedAdapter.ViewHolder> 
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
+    public void onBindViewHolder(ViewHolder holder, final int position) {
         holder.tvTitle.setText(savedList.get(position).getTitle());
         holder.tvDesc.setText(savedList.get(position).getDesc());
     }
